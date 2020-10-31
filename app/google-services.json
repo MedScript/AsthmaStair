@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "961919584980",
+    "firebase_url": "https://asthmastair.firebaseio.com",
+    "project_id": "asthmastair",
+    "storage_bucket": "asthmastair.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961919584980:android:0fa34a8bb86eeb3404c941",
+        "android_client_info": {
+          "package_name": "com.medscript.asthmastair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961919584980-2tt93qm807i7fr3rr5bdf20rb6vi2gju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4kCZnHKgwIzyexdqaECD-lL1_MYahjvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961919584980-2tt93qm807i7fr3rr5bdf20rb6vi2gju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
