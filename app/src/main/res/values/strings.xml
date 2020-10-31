@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AsthmaStair</string>
+    <string-array name="usertype">
+        <item>Doutor</item>
+        <item>Paciente</item>
+    </string-array>
+</resources>
