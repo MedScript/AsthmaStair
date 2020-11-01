@@ -13,80 +13,54 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="143dp"
         android:fontFamily="@font/arvo"
         android:text="Pedidos anteriores"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
-        android:fontFamily="@font/arvo"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="61dp"
         android:layout_marginEnd="92dp"
+        android:layout_marginBottom="216dp"
+        android:fontFamily="@font/arvo"
         android:text="Descreva o seu pedido"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_enviar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:fontFamily="@font/arvo"
-        android:layout_width="204dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="167dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="40dp"
-        android:background="#888686"
-        android:text="(Mensagem do utente)"
-        android:textAlignment="center"
-        android:textColor="#FFFEFE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="204dp"
-        android:fontFamily="@font/arvo"
-        android:layout_height="93dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="164dp"
-        android:background="#888686"
-        android:text="(Mensagem do médico)"
-        android:textAlignment="center"
-        android:textColor="#FFFEFE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-    <TextView
-        android:id="@+id/textView18"
+    <EditText
+        android:id="@+id/message_ajuda"
         android:layout_width="326dp"
         android:layout_height="152dp"
         android:layout_marginStart="43dp"
-        android:fontFamily="@font/arvo"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="164dp"
+        android:layout_marginBottom="84dp"
         android:background="#888686"
-        android:text="(Espaço para a Mensagem)"
+        android:fontFamily="@font/arvo"
+        android:hint="(Espaço para a mensagem)"
         android:textAlignment="center"
         android:textColor="#FFFEFE"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_enviar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.008"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.153" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_enviar"
         android:layout_width="115dp"
         android:fontFamily="@font/arvo"
         android:layout_height="52dp"
@@ -95,4 +69,17 @@
         android:text="Enviar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="52dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@drawable/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
