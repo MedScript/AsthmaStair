@@ -15,6 +15,8 @@ public class TerapeuticaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        getActivity().setTitle("A minha terapêutica");
+
         return inflater.inflate(R.layout.fragment_terapeutica, container, false);
     }
 }

@@ -24,6 +24,7 @@ public class ConsultasFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_consultas,
                 container, false);
+        getActivity().setTitle("Consultas marcadas");
         marcarConsultas = rootView.findViewById(R.id.marcar_consulta);
         marcarConsultas.setOnClickListener(v -> updateDetail());
         return rootView;

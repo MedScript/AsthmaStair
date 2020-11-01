@@ -37,8 +37,8 @@ public class PatientActivity extends AppCompatActivity implements NavigationView
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new SintomasFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_sintomas);
+                    new ConsultasFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_consultas);
         }
 
     }
@@ -46,6 +46,10 @@ public class PatientActivity extends AppCompatActivity implements NavigationView
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.nav_consultas:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ConsultasFragment()).commit();
+                break;
             case R.id.nav_sintomas:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new SintomasFragment()).commit();
@@ -65,10 +69,6 @@ public class PatientActivity extends AppCompatActivity implements NavigationView
             case R.id.nav_ajuda:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new AjudaFragment()).commit();
-                break;
-            case R.id.nav_consultas:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ConsultasFragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);
