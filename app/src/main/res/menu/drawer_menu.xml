@@ -6,25 +6,31 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_help"
-            android:icon="@drawable/ic_baseline_help_24"
-            android:title="Pedido de ajuda"></item>
+            android:id="@+id/nav_sintomas"
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="O meu diário de sintonas"></item>
         <item
-            android:id="@+id/nav_searchPat"
+            android:id="@+id/nav_resumo"
+            android:icon="@drawable/ic_baseline_folder_24"
+            android:title="O resumo do último mês"></item>
+        <item
+            android:id="@+id/nav_terapeutica"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="A minha terapêutica"></item>
+        <item
+            android:id="@+id/nav_exames"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="Os meus exames"></item>
+        <item
+            android:id="@+id/nav_ajuda"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="Pedir ajuda"></item>
+        <item
+            android:id="@+id/nav_consultas"
             android:icon="@drawable/ic_baseline_search_24"
-            android:title="Pesquisar utente"></item>
-
+            android:title="Consultas marcadas"></item>
     </group>
 
-    <item android:title="Comunicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:title="Share"></item>
-            <item
-                android:id="@+id/nav_send"
-                android:title="Send"></item>
-        </menu>
-    </item>
+
 
 </menu>

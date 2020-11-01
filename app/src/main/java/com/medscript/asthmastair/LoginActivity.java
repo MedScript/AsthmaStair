@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -31,25 +30,13 @@ public class LoginActivity extends AppCompatActivity {
         mfirebaseAuth = FirebaseAuth.getInstance();
         emailId = findViewById(R.id._textUser);
         password = findViewById(R.id._textPass);
-        //_spinner = findViewById(R.id.spinner);
         _btnLogin = findViewById(R.id._btnLogin);
 
-//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.usertype, R.layout.support_simple_spinner_dropdown_item);
-//        _spinner.setAdapter(adapter);
 
         mAuthStateListener = firebaseAuth -> {
-            //String item = _spinner.getSelectedItem().toString();
             FirebaseUser mFirebaseUser = mfirebaseAuth.getCurrentUser();
             if (mFirebaseUser != null) {
-                startActivity(new Intent(LoginActivity.this, Doctor.class));
-//                if (item.equals("Doutor")) {
-//                    Toast.makeText(MainActivity.this, "Bem vindo Doutor!", Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(MainActivity.this, Doctor.class));
-//                }
-//                if (item.equals("Paciente")) {
-//                    Toast.makeText(MainActivity.this, "Bem vindo!", Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(MainActivity.this, Patiente.class));
-//                }
+                startActivity(new Intent(LoginActivity.this, PatientActivity.class));
             } else {
                 Toast.makeText(LoginActivity.this, "Digite novamente!", Toast.LENGTH_SHORT).show();
             }
@@ -73,15 +60,8 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(LoginActivity.this, "Erro no login, tente novamente", Toast.LENGTH_SHORT).show();
                     } else {
 
-                        startActivity(new Intent(LoginActivity.this, Doctor.class));
-//                        if (item.equals("Doutor")){
-//                            Toast.makeText(LoginActivity.this, "Bem vindo Doutor!", Toast.LENGTH_SHORT).show();
-//                            startActivity(new Intent(LoginActivity.this, Doctor.class));
-//                        }
-//                        if (item.equals("Paciente")){
-//                            Toast.makeText(LoginActivity.this, "Bem vindo!", Toast.LENGTH_SHORT).show();
-//                            startActivity(new Intent(LoginActivity.this, Patiente.class));
-//                        }
+                        startActivity(new Intent(LoginActivity.this, PatientActivity.class));
+
                     }
                 });
             } else {

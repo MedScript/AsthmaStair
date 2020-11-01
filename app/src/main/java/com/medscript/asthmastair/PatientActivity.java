@@ -3,6 +3,7 @@ package com.medscript.asthmastair;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -13,14 +14,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class Doctor extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class PatientActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor);
+        setContentView(R.layout.activity_patient);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -36,8 +37,8 @@ public class Doctor extends AppCompatActivity implements NavigationView.OnNaviga
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new SearchPatiente_Doctor()).commit();
-            navigationView.setCheckedItem(R.id.nav_searchPat);
+                    new SintomasFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_sintomas);
         }
 
     }
@@ -45,19 +46,29 @@ public class Doctor extends AppCompatActivity implements NavigationView.OnNaviga
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.nav_help:
+            case R.id.nav_sintomas:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Help_Doctor()).commit();
+                        new SintomasFragment()).commit();
                 break;
-            case R.id.nav_searchPat:
+            case R.id.nav_resumo:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new SearchPatiente_Doctor()).commit();
+                        new ResumoFragment()).commit();
                 break;
-            case R.id.nav_share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+            case R.id.nav_terapeutica:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new TerapeuticaFragment()).commit();
                 break;
-            case R.id.nav_send:
-                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+            case R.id.nav_exames:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ExamesFragment()).commit();
+                break;
+            case R.id.nav_ajuda:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AjudaFragment()).commit();
+                break;
+            case R.id.nav_consultas:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ConsultasFragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);
@@ -65,14 +76,13 @@ public class Doctor extends AppCompatActivity implements NavigationView.OnNaviga
     }
 
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
 
-        if(drawer.isDrawerOpen(GravityCompat.START)){
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
-
 
 
     }
