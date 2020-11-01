@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class TerapeuticaFragment extends Fragment {
     private Button guardar;
+    private Button adicionar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -22,10 +23,19 @@ public class TerapeuticaFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_terapeutica, container, false);
 
         guardar = v.findViewById(R.id.guardar);
+        adicionar = v.findViewById(R.id.novo_farmaco);
+
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "Fármacos atualizados com sucesso!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        adicionar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Adicionar novo fármaco!", Toast.LENGTH_SHORT).show();
             }
         });
 

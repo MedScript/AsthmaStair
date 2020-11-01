@@ -37,8 +37,8 @@ public class PatientActivity extends AppCompatActivity implements NavigationView
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new ConsultasFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_consultas);
+                    new SintomasFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_sintomas);
         }
 
     }
