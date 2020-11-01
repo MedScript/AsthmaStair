@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".ExamesFragment">
 
 
@@ -13,6 +14,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="92dp"
+        android:fontFamily="@font/arvo"
         android:text="FEV1/FVC"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -23,6 +25,7 @@
     <TextView
         android:id="@+id/textView39"
         android:layout_width="203dp"
+        android:fontFamily="@font/arvo"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="92dp"
@@ -37,6 +40,7 @@
         android:id="@+id/textView36"
         android:layout_width="136dp"
         android:layout_height="40dp"
+        android:fontFamily="@font/arvo"
         android:layout_marginStart="12dp"
         android:layout_marginTop="29dp"
         android:text="FVC"
@@ -49,6 +53,7 @@
     <TextView
         android:id="@+id/textView37"
         android:layout_width="203dp"
+        android:fontFamily="@font/arvo"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="29dp"
@@ -62,6 +67,7 @@
         android:id="@+id/textView26"
         android:layout_width="136dp"
         android:layout_height="40dp"
+        android:fontFamily="@font/arvo"
         android:layout_marginStart="16dp"
         android:layout_marginTop="29dp"
         android:text="FEV1"
@@ -75,6 +81,7 @@
         android:id="@+id/textView27"
         android:layout_width="203dp"
         android:layout_height="40dp"
+        android:fontFamily="@font/arvo"
         android:layout_marginStart="16dp"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="40dp"
@@ -87,6 +94,7 @@
         android:id="@+id/textView17"
         android:layout_width="136dp"
         android:layout_height="40dp"
+        android:fontFamily="@font/arvo"
         android:layout_marginStart="16dp"
         android:layout_marginTop="29dp"
         android:text="Data"
@@ -102,6 +110,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="29dp"
+        android:fontFamily="@font/arvo"
         android:layout_marginEnd="40dp"
         android:background="#979595"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,6 +123,7 @@
         android:layout_height="42dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="230dp"
+        android:fontFamily="@font/arvo"
         android:layout_marginEnd="20dp"
         android:text="Introduzir novo exame"
         android:textAlignment="viewStart"
@@ -127,6 +137,7 @@
         android:id="@+id/textView40"
         android:layout_width="377dp"
         android:layout_height="42dp"
+        android:fontFamily="@font/arvo"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="22dp"
@@ -137,5 +148,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/tabela_exames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
