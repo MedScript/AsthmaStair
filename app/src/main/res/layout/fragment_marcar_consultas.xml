@@ -8,7 +8,7 @@
     tools:context=".MarcarConsultasFragment">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/marcar_consulta_calen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/arvo"

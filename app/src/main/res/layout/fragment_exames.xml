@@ -162,7 +162,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
     <Button
-        android:id="@+id/guarda_examesr"
+        android:id="@+id/guarda_exames"
         android:layout_width="145dp"
         android:layout_height="54dp"
         android:layout_marginStart="160dp"
