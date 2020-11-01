@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="30dp"
+        android:fontFamily="@font/arvo"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +27,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/arvo"
         android:layout_marginStart="32dp"
         android:layout_marginTop="2dp"
-        android:text="teste@teste.com"
+        android:text="paciente123@gmail.com"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -36,8 +38,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/arvo"
         android:layout_marginStart="32dp"
-        android:text="Coding in Flow"
+        android:text="Maria Antónia"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />

@@ -16,7 +16,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText emailId, password;
     private Button _btnLogin;
-    private Spinner _spinner;
     private FirebaseAuth mfirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -43,7 +42,6 @@ public class LoginActivity extends AppCompatActivity {
         };
 
         _btnLogin.setOnClickListener(v -> {
-            String item = _spinner.getSelectedItem().toString();
             String email = emailId.getText().toString();
             String pwd = password.getText().toString();
             if (email.isEmpty()) {
